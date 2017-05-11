@@ -54,16 +54,7 @@
     </div>
 </header>
 
-<!--Middle Content-->
-<div class="row">
-<ol class="breadcrumb">
-  <li class="breadcrumb-item"><a href="#">Home</a></li>
-  <li class="breadcrumb-item"><a href="#">About</a></li>
-  <li class="breadcrumb-item"><a href="#">Contact</a></li>
-  <li class="breadcrumb-item"><a href="#">Shop</a></li>
-  <li class="breadcrumb-item active">Data</li>
-</ol>
-</div>
+<!--Middle Content--> 
 <div class="row" id="description">
             <div class="col-md-4">
                 <div id="myFirstCarousel" class="carousel slide" data-ride="carousel" style="width: 200px;  margin: 0 auto">
@@ -78,13 +69,13 @@
                     <!-- wrapper with slides -->
                     <div class="carousel-inner">
                         <div class="item active">
-                            <img src="img/image1.jpg" alt="Grace sharing">
+                            <img src="img/image1.jpg" alt="">
                             <!--use http://placehold.it/800x533 , mention image sizing-->
                             <div class="carousel-caption"></div>
                             <!--show how to change caption color in css-->
                         </div> 
                         <div class="item">
-                            <img src="img/image2.jpg" alt="Grace sitting">
+                            <img src="img/image2.jpg" alt="">
                             <div class="carousel-caption"></div>
                         </div> 
                     </div>
@@ -100,21 +91,29 @@
                         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
-
                 </div>
-                <!--/carousel-->
+               <div class="row">
+                <div class="col-md-6">
+                    <button type="button" class="btn btn-default navbar-btn">Sign in</button>
+                </div>
+                <div class="col-md-6"> 
+                    <button type="button" class="btn btn-default navbar-btn">Sign in</button>
+                </div>
+               </div>
+            </div>
+            
+            <!--Content to right of picture-->
+    <div class="col-md-8">
+        <h1>The Guitar Belt: Anti-Scratch</h1>
+            <br></br>
+            <h1>$39.99</h1>
+            <br></br>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+    </div>
+</div>
+            
+            <!--Buttons Under Picture-->
 
-            </div>
-            <div class="col-md-6">
-                <h1>The Guitar Belt: Anti-Scratch</h1>
-                <br></br>
-                <h1>$39.99</h1>
-                <br></br>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-            </div>
-            <!--/col-->
-</div>    
-        <!--/row for carousel-->
 <!--Footer-->
 <div class="row"id="footer">
         <div class="col-xs-6">
@@ -123,7 +122,6 @@
         <div class="col-xs-6">
         <img id="socialMedia-image"src="img/socialmedia.jpg" width="100" height="100">
         </div>
-</div>
 </div>
         <!--<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
