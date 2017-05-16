@@ -1,24 +1,30 @@
 // https://learn.jquery.com/using-jquery-core/document-ready/
 $(document).ready(function(){ //do what's inside when the document is ready
-    $("#email_form").validate( {  //run the validate plugin on the html element with id of email_form
+    $("Contact").validate( {  //run the validate plugin on the html element with id of email_form
         rules: {  //include the rules that must be followed here
-            "email_1": {  //the email_1 element in the #email_form should meet the following conditions:
-                required: true,  //email_1 is required
-                email: true      //email_1 needs to be an email address
+            "email": {  //the email_1 element in the #email_form should meet the following conditions:
+                required: true,  //email is required
+                email: true      //email needs to be an email address
             },
-            "full_name": {
-                required: true  //full_name is required
+            "firstname": {
+                required: true  //First name is required
+            },
+            "lastname": {
+                required: true  //Last name is required
             }
 
         },
         messages: {  //include here the customized messages to alert the user to an input error
             //for each rule set above, you'll have a messages set here
             //to have truly customized messages, you'll have a 1:1 ratio of rules and messages
-            "email_1": {
+            "email": {
                 required: "Please enter your email address",  //if this rule is not met, this message will be displayed
                 email: "Please enter a valid email"
             },
-            "full_name": {
+            "firstname": {
+                required: "Name is required"
+            },
+            "lastname": {
                 required: "Name is required"
             }
         }
@@ -29,3 +35,35 @@ $(document).ready(function(){ //do what's inside when the document is ready
     console.log("hello world!");
 
 });
+/*
+$(function() {
+  // Initialize form validation on the registration form.
+  // It has the name attribute "registration"
+  $("form[name='Contact Form']").validate({
+    // Specify validation rules
+    rules: {
+      // The key name on the left side is the name attribute
+      // of an input field. Validation rules are defined
+      // on the right side
+      firstname: "required",
+      lastname: "required",
+      email: {
+        required: true,
+        // Specify that email should be validated
+        // by the built-in "email" rule
+        email: true
+      }
+    },
+    // Specify validation error messages
+    messages: {
+      firstname: "Please enter your firstname",
+      lastname: "Please enter your lastname",
+      email: "Please enter a valid email address"
+    },
+    // Make sure the form is submitted to the destination defined
+    // in the "action" attribute of the form when valid
+    submitHandler: function(form) {
+      form.submit();
+    }
+  });
+});*/
