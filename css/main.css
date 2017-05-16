@@ -211,6 +211,14 @@ a{
 .const-message {
     color: gray;
 }
+#donation-image {
+    padding-top: 5em;
+    padding-bottom: 5em;
+    
+    display:block;
+    margin:auto;
+}
+
 /*FORM*/
 #contact label{
 			display: inline-block;
